@@ -10,14 +10,14 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden px-4">
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden px-4">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.1),transparent_50%)]" />
         <div className="container max-w-6xl mx-auto text-center z-10">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-accent/10 text-accent rounded-full"
+            className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-accent/10 text-accent rounded-full"
           >
             Revolutionizing Business Purchases
           </motion.span>
@@ -25,7 +25,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
+            className="text-4xl md:text-6xl font-bold mb-4 tracking-tight"
           >
             Simplify Your
             <span className="text-accent"> Business Purchases</span>
@@ -34,10 +34,10 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-gray-400 mb-6 max-w-2xl mx-auto"
           >
-            Transform your procurement process with AI-powered assistance.
-            From days to minutes.
+            Transform your procurement process with AI-powered assistance.{" "}
+            <span className="text-accent font-semibold">From days to minutes.</span>
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -56,15 +56,15 @@ const Index = () => {
       </section>
 
       {/* Chat Preview Section */}
-      <section className="py-24 px-4">
+      <section className="py-16 px-4">
         <div className="container max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <motion.span
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-accent/10 text-accent rounded-full"
+                className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-accent/10 text-accent rounded-full"
               >
                 AI-Powered Assistant
               </motion.span>
@@ -72,7 +72,7 @@ const Index = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-4xl md:text-5xl font-bold mb-6"
+                className="text-3xl md:text-4xl font-bold mb-4"
               >
                 Your Personal Procurement Expert
               </motion.h2>
@@ -80,7 +80,7 @@ const Index = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="text-xl text-gray-400 mb-8"
+                className="text-lg text-gray-400 mb-6"
               >
                 Experience seamless purchasing through natural conversations.
                 Our AI understands your needs and handles the entire process.
@@ -94,14 +94,14 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 px-4 bg-secondary">
+      <section className="py-16 px-4 bg-secondary">
         <div className="container max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <motion.span
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-accent/10 text-accent rounded-full"
+              className="inline-block px-4 py-1.5 mb-4 text-sm font-medium bg-accent/10 text-accent rounded-full"
             >
               Features
             </motion.span>
@@ -109,12 +109,12 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl md:text-5xl font-bold mb-6"
+              className="text-3xl md:text-4xl font-bold mb-4"
             >
               Why Choose ZapZo
             </motion.h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <FeatureCard
               icon={<MessageSquare className="w-6 h-6" />}
               title="Natural Conversations"
@@ -135,7 +135,7 @@ const Index = () => {
       </section>
 
       {/* Time Comparison Section */}
-      <section className="py-24 px-4">
+      <section className="py-16 px-4">
         <div className="container max-w-6xl mx-auto">
           <TimeComparison />
         </div>
