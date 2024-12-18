@@ -48,7 +48,7 @@ const Index = () => {
             <Button
               size="lg"
               className="bg-accent text-black hover:bg-accent/90"
-              onClick={() => window.open('https://wa.me/918319101668?text=I%20want%20to%20know%20more%20about%20zapzo', '_blank')}
+              onClick={() => window.open('https://calendly.com/shreepandey99/30min', '_blank')}
             >
               Book Demo with Founder
             </Button>
@@ -139,6 +139,41 @@ const Index = () => {
       <section className="py-24 px-4">
         <div className="container max-w-6xl mx-auto">
           <TimeComparison />
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <section className="py-16 px-4 bg-secondary">
+        <div className="container max-w-6xl mx-auto text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-3xl md:text-4xl font-bold mb-6"
+          >
+            Ready to Transform Your Procurement Process?
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto"
+          >
+            Join innovative businesses that are already saving time and resources with ZapZo.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <Button
+              size="lg"
+              className="bg-accent text-black hover:bg-accent/90"
+              onClick={() => window.open('https://calendly.com/shreepandey99/30min', '_blank')}
+            >
+              Book Demo with Founder
+            </Button>
+          </motion.div>
         </div>
       </section>
     </div>
