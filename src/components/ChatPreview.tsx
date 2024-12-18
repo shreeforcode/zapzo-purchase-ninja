@@ -9,36 +9,26 @@ const ChatPreview = () => {
       className="glass-card p-6 hover-card max-w-md mx-auto"
     >
       <div className="flex flex-col space-y-4">
-        <div className="chat-bubble bg-gray-800 text-white self-start text-sm">
-          soon.
-        </div>
         <div className="chat-bubble bg-[#025C4C] text-white self-end text-sm">
-          Need to buy 25 quantities of this type of bottle set :
-          Limited-time deal: Kitchen Bloom Stainless Steel Vacuum Insulated
-          Bottle Water Flask Gift Set With Two Cups Hot & Cold | Gifts
-          For Employees | Corporate Gift Items | Vacuum Flask Set With 2
-          Mugs (Random Color) - 500 Ml
-          
-          Near sector 9, gurugram, Haryana
-          Looking for something under 300
+          Kya aapke paas 25 sets hai?
         </div>
         <div className="chat-bubble bg-gray-800 text-white self-start text-sm">
-          Got it! 👍 Total budget for 25 bottles?
+          You need 25 bottles in gurgram
         </div>
         <div className="chat-bubble bg-[#025C4C] text-white self-end text-sm">
-          Under 300 per bottle
+          Haan, sahi hai. Kya price 300 ke andar hai?
+        </div>
+        <div className="chat-bubble bg-[#025C4C] text-white self-end text-sm">
+          Ye wala bottle thoda alag hai. Kya Kitchen Bloom wala hai aapke paas?
         </div>
         <div className="chat-bubble bg-gray-800 text-white self-start text-sm">
-          Cool! Just to confirm, is this for a corporate gift?
+          No sir we are dealing in pexpo as we are manufacturer of pexpo
         </div>
         <div className="chat-bubble bg-[#025C4C] text-white self-end text-sm">
-          No we want for a function
+          Okay, samajh gaya. Thanks for letting me know.
         </div>
         <div className="chat-bubble bg-gray-800 text-white self-start text-sm">
-          What date is the function planned for?
-        </div>
-        <div className="chat-bubble bg-[#025C4C] text-white self-end text-sm">
-          I want it ASAP
+          Sure
         </div>
       </div>
     </motion.div>
