@@ -45,11 +45,12 @@ const Index = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button size="lg" className="bg-accent text-black hover:bg-accent/90">
-              Get Started
-            </Button>
-            <Button size="lg" variant="outline">
-              Watch Demo
+            <Button
+              size="lg"
+              className="bg-accent text-black hover:bg-accent/90"
+              onClick={() => window.open('https://wa.me/918319101668?text=I%20want%20to%20know%20more%20about%20zapzo', '_blank')}
+            >
+              Book Demo with Founder
             </Button>
           </motion.div>
         </div>
