@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { MessageSquare, Clock, DollarSign, Zap } from "lucide-react";
+import { MessageSquare, Clock, DollarSign, Zap, CheckCircle2 } from "lucide-react";
 import ChatPreview from "@/components/ChatPreview";
 import FeatureCard from "@/components/FeatureCard";
 import TimeComparison from "@/components/TimeComparison";
@@ -10,86 +10,76 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden px-4">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 bg-gradient-to-b from-black to-secondary">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.1),transparent_50%)]" />
-        <div className="container max-w-6xl mx-auto text-center z-10">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-accent/10 text-accent rounded-full"
-          >
-            Revolutionizing Business Purchases
-          </motion.span>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
-          >
-            Simplify Your
-            <span className="text-accent"> Business Purchases</span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto"
-          >
-            Transform your procurement process with AI-powered assistance.
-            From days to minutes.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <Button
-              size="lg"
-              className="bg-accent text-black hover:bg-accent/90"
-              onClick={() => window.open('https://calendly.com/shreepandey99/30min', '_blank')}
-            >
-              Book Demo with Founder
-            </Button>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Chat Preview Section */}
-      <section className="py-24 px-4">
         <div className="container max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <motion.span
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-left space-y-6">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-accent/10 text-accent rounded-full"
+                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent"
               >
-                AI-Powered Assistant
-              </motion.span>
-              <motion.h2
+                <Zap className="w-4 h-4" />
+                <span className="text-sm font-medium">AI-Powered Procurement</span>
+              </motion.div>
+              
+              <motion.h1
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-4xl md:text-5xl font-bold mb-6"
+                className="text-4xl md:text-6xl font-bold tracking-tight"
               >
-                Your Personal Procurement Expert
-              </motion.h2>
-              <motion.p
+                Transform Your
+                <span className="text-accent"> Business Purchases</span>
+                <br />in Minutes
+              </motion.h1>
+
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="text-xl text-gray-400 mb-8"
+                className="space-y-4"
               >
-                Experience seamless purchasing through natural conversations.
-                Our AI understands your needs and handles the entire process.
-              </motion.p>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-accent mt-1" />
+                  <p className="text-lg text-gray-400">Chat naturally on WhatsApp</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-accent mt-1" />
+                  <p className="text-lg text-gray-400">Get instant quotes from verified vendors</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-accent mt-1" />
+                  <p className="text-lg text-gray-400">Save 70% time in procurement</p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className="pt-4"
+              >
+                <Button
+                  size="lg"
+                  className="bg-accent text-black hover:bg-accent/90 text-lg px-8"
+                  onClick={() => window.open('https://calendly.com/shreepandey99/30min', '_blank')}
+                >
+                  Book Demo with Founder
+                </Button>
+              </motion.div>
             </div>
-            <div className="relative">
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="lg:block"
+            >
               <ChatPreview />
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -142,9 +132,10 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer Section */}
-      <section className="py-16 px-4 bg-secondary">
-        <div className="container max-w-6xl mx-auto text-center">
+      {/* CTA Section */}
+      <section className="py-24 px-4 bg-secondary relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.1),transparent_50%)]" />
+        <div className="container max-w-3xl mx-auto text-center relative z-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -157,7 +148,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto"
+            className="text-xl text-gray-400 mb-8"
           >
             Join innovative businesses that are already saving time and resources with ZapZo.
           </motion.p>
@@ -168,7 +159,7 @@ const Index = () => {
           >
             <Button
               size="lg"
-              className="bg-accent text-black hover:bg-accent/90"
+              className="bg-accent text-black hover:bg-accent/90 text-lg px-8"
               onClick={() => window.open('https://calendly.com/shreepandey99/30min', '_blank')}
             >
               Book Demo with Founder
