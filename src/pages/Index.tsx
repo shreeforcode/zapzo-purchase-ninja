@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { MessageSquare, Clock, DollarSign, Zap, CheckCircle2 } from "lucide-react";
+import { MessageSquare, Clock, DollarSign, Zap, CheckCircle2, Building2, Factory, Building, ShoppingBag } from "lucide-react";
 import ChatPreview from "@/components/ChatPreview";
 import FeatureCard from "@/components/FeatureCard";
 import TimeComparison from "@/components/TimeComparison";
@@ -121,6 +120,85 @@ const Index = () => {
               title="Cost Efficient"
               description="Optimize spending with AI-powered price comparisons"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Who is this tool for? Section */}
+      <section className="py-24 px-4 bg-secondary relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.1),transparent_50%)]" />
+        <div className="container max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <motion.span
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-accent/10 text-accent rounded-full"
+            >
+              Target Audience
+            </motion.span>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-4xl md:text-5xl font-bold mb-12"
+            >
+              Who is this tool for?
+            </motion.h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="glass-card p-6 text-center hover-card"
+            >
+              <div className="w-16 h-16 mx-auto bg-accent/10 rounded-2xl flex items-center justify-center text-accent mb-4">
+                <Building2 className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Corporate Offices</h3>
+              <p className="text-gray-400">Streamline office supplies and equipment procurement with automated ordering</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="glass-card p-6 text-center hover-card"
+            >
+              <div className="w-16 h-16 mx-auto bg-accent/10 rounded-2xl flex items-center justify-center text-accent mb-4">
+                <Factory className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Manufacturing</h3>
+              <p className="text-gray-400">Efficiently manage raw materials and industrial supplies procurement</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="glass-card p-6 text-center hover-card"
+            >
+              <div className="w-16 h-16 mx-auto bg-accent/10 rounded-2xl flex items-center justify-center text-accent mb-4">
+                <Building className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Hotels & Restaurants</h3>
+              <p className="text-gray-400">Simplify inventory management and supplier relationships</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="glass-card p-6 text-center hover-card"
+            >
+              <div className="w-16 h-16 mx-auto bg-accent/10 rounded-2xl flex items-center justify-center text-accent mb-4">
+                <ShoppingBag className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Retail Chains</h3>
+              <p className="text-gray-400">Optimize multi-location inventory and supply chain management</p>
+            </motion.div>
           </div>
         </div>
       </section>
